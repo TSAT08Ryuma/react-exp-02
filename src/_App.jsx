@@ -2,7 +2,6 @@ import { useState, useEffect } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import News from './components/News'
 
 function App() {
   // usestateは状態をつkるReactのフックで（）内初期値
@@ -32,7 +31,6 @@ console.log("確認")
 
   return (
     <>
-    <News />
     <div>
         <p>名前</p>
         <input 
@@ -57,4 +55,3 @@ console.log("確認")
 }
 
 export default App
-
