@@ -1,0 +1,29 @@
+import React from "react";
+import styles from "./style.module.scss";
+import Header from "../../layout/Header";
+import SideBar from "../../layout/SideBar";
+import News from "../../components/News";
+import CalendarItem from "../../components/CalendarItem";
+import useAuth from "../../hooks/useAuth";
+
+const Home = () => {
+  useAuth();
+
+  return (
+    <>
+      <Header />
+      <div className={styles.home}>
+        <SideBar />
+        <div className={styles.contents}>
+          <News />
+          <CalendarItem />
+        </div>
+      </div>
+    </>
+  );
+};
+
+export default Home;
+
+// このファイルが配置を決めている。ヘッダー要素、その下のスタイルホーム要素、その中にサイドバーとニュース＆カレンダー要素がある
+// stylesというのはインポートで使った変数でバナナでもできる。
