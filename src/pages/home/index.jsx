@@ -6,8 +6,6 @@ import News from "../../components/News";
 import CalendarItem from "../../components/CalendarItem";
 
 const Home = () => {
-  useAuth();
-
   return (
     <>
       <Header />

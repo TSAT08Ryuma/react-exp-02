@@ -1,8 +1,8 @@
-import { useState, useEffect } from 'react'
+import React, { useEffect, useState } from "react";
 import './App.css'
 import Home from './pages/home'
 import Chart from './pages/chart'
-import { Route, Router, Routes } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 function App() {
   return (

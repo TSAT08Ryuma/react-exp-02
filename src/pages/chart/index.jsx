@@ -3,11 +3,9 @@ import styles from "./style.module.scss";
 import Header from "../../layout/Header";
 import SideBar from "../../layout/SideBar";
 import News from "../../components/News";
-import CalendarItem from "../../components/CalendarItem";
+import Chart from "../../components/Chart";
 
-const Home = () => {
-  useAuth();
-
+const chart = () => {
   return (
     <>
       <Header />
@@ -15,10 +13,11 @@ const Home = () => {
         <SideBar />
         <div className={styles.contents}>
           <Chart />
+          <News />
         </div>
       </div>
     </>
   );
 };
 
-export default Home;
+export default chart;
